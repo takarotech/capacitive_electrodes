@@ -16,7 +16,7 @@ LOGGING_FORMATS = {
 
 
 class App(object):
-    _logger = logging.getLogger('electrodes_test')
+    _logger = logging.getLogger('test_electrodes')
 
     def __init__(self, hardware_version):
         logging.basicConfig(level=LOGGING_LEVEL, **LOGGING_FORMATS)
@@ -35,7 +35,7 @@ class App(object):
 
 def main():
     _parser = argparse.ArgumentParser(
-        description='Electrodes Test',
+        description='Test Electrodes',
         add_help=False)
     _parser.add_argument(
         '--hardware_version',
