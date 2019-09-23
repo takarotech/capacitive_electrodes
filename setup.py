@@ -11,5 +11,5 @@ setup(
     description='MPR121 based capacitive electrodes driver',
     package_dir={'': 'src'},
     packages=find_packages('src'),
-    install_requires=['smbus2'],
+    install_requires=['smbus2', 'evdev'],
 )
